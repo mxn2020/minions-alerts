@@ -1,6 +1,12 @@
 ---
 name: minions-alerts
-description: Alert rules, delivery preferences, and alert history for availability changes
+id: OC-0103
+version: 1.0.0
+description: "Alert rules, delivery preferences, and alert history for availability changes"
+category: dev-tools
+subcategory: monitoring
+tags: ["minion", "dev-tools", "monitoring"]
+comments:
 ---
 
 # minions-alerts — Agent Skills
