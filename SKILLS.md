@@ -174,65 +174,28 @@ pnpm add -g @minions-alerts/cli
 ```
 
 Set `MINIONS_STORE` env var to control where data is stored (default: `.minions/`).
-Storage uses sharded directories: `.minions/<id[0..1]>/<id[2..3]>/<id>.json`
 
 ### Discover Types
 
 ```bash
-# List all MinionTypes with their fields
 alerts types list
-
-# Show detailed schema for a specific type
 alerts types show <type-slug>
 ```
 
-### Create
+### CRUD
 
 ```bash
-# Create with shortcut flags
-alerts create <type> -t "Title" -s "status" -p "priority"
-
-# Create with full field data
-alerts create <type> --data '{ ... }'
-```
-
-### Read
-
-```bash
-# List all Minions of a type
+alerts create <type> -t "Title" -s "status"
 alerts list <type>
-
-# Show a specific Minion
 alerts show <id>
-
-# Search by text
-alerts search "query"
-
-# Output as JSON (for piping)
-alerts list --json
-alerts show <id> --json
-```
-
-### Update
-
-```bash
-# Update fields
 alerts update <id> --data '{ "status": "active" }'
-```
-
-### Delete
-
-```bash
-# Soft-delete (marks as deleted, preserves data)
 alerts delete <id>
+alerts search "query"
 ```
 
 ### Stats & Validation
 
 ```bash
-# Show storage stats
 alerts stats
-
-# Validate a Minion JSON file against its schema
 alerts validate ./my-minion.json
 ```
