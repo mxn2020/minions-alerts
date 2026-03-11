@@ -6,3 +6,4 @@ description: "Alert rules, delivery preferences, and alert history for availabil
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox
