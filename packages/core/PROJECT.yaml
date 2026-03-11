@@ -1,0 +1,8 @@
+name: "@minions-alerts/sdk"
+project_scope: child
+child_type: sdk
+parent_project: minions-alerts-workspace
+description: "Alert rules, delivery preferences, and alert history for availability changes"
+priority: high
+deploy_url: null
+tags: null

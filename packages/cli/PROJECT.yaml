@@ -1,0 +1,8 @@
+name: "@minions-alerts/cli"
+project_scope: child
+child_type: cli
+parent_project: minions-alerts-workspace
+description: "CLI for minions-alerts — Alert rules, delivery preferences, and alert history for availability changes"
+priority: high
+deploy_url: null
+tags: null
