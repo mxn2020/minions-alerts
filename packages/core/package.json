@@ -1,6 +1,6 @@
 {
   "name": "@minions-alerts/sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Alert rules, delivery preferences, and alert history for availability changes",
   "type": "module",
   "main": "./dist/index.js",
